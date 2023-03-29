@@ -1,0 +1,77 @@
+/*Universal (todos los elementos del html)*/
+/*
+*{ 
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/*Etiqueta (selecciona una etiqueta específica)*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: gray;
+    font-size: 60px;
+}
+
+/*Clase (selecciona todos los elementos html que contengan ese atributo class)*/
+.box{
+    background-color: darkviolet;
+    color: aliceblue;
+    font-size: 30px;
+    border: solid black;
+    text-align: center;
+}
+
+/*id (selecciona todos los elementos html que contengan ese atributo id)*/
+#caja{
+    background-color: blue;
+    color: aliceblue;
+    font-size: 34px;
+    text-align: right;
+}
+
+/*
+Orden de precedencia:
+menor importancia   ->   a   ->    mayor importancia
+etiqueta < clase < id < estilo en linea < !important
+*/
+
+/*Especificidad (cada selector posee una especificidad y esta nos va a indicar cuán directa es la selección del elemento)*/
+
+.elemento #id{
+    
+}
+
+p #id{
+
+}
+
+/*
+Etiqueta + Etiqueta
+Seleccionamos todos los <p></p> que son hijos de una etiqueta <article></article> - E: (0,0,2)
+*/
+
+article p{
+    color: crimson;
+}
+
+/*
+Clase + Etiqueta
+Seleccionamos todos los <li></li> que son hijos de .menu - E: (0,1,1) 
+*/
+.menu li{
+    padding: 10px;
+}
+
+/*
+ID + Clase
+Seleccionamos todos los .shirts hijos de #sales
+*/
+
+#sales .shirts{
+    color: #2b2b2b;
+}

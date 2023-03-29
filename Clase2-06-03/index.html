@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase N°2 - HTML Recargado Listas - Enlaces - Tablas</title>
+</head>
+<body>
+    <!--Estrictura semántica de mi página web-->
+
+    <header> <h1>Mi primer sitio web--</h1></header>
+
+    <nav>
+        <ul> 
+            <!--Enlace de referencia-->
+            <!--Listas no ordenadas (bullet points)-->
+            <li> <a href="#seccion1"> Sección 1</a> </li>
+            <li> <a href="#seccion2"> Sección 2</a> </li>
+            <li> <a href="#seccion3"> Sección 3</a> </li>
+            <li> <a href="#seccion4"> Sección 4</a> </li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="seccion1" style="border: 1px solid black;">
+            <h2>Sección 1</h2>
+
+            <!--Lista ordenada (numerada)-->
+            <h3>Lista Para hacer</h3>
+            <ol>
+                <li>Prender el ordenador</li>
+                <li>Ingresar clave en el usuario</li>
+                <li>Conectar auriculares</li>
+            </ol>
+        </section>
+
+        <section id="seccion2" style="margin-top: 500px;">
+            <h2>Sección 2</h2>
+
+            <h2>Pasos para preparar un té</h2>
+            <ol>
+                <li>Calentar agua</li>
+                <li>Colocar un saquito de té en una taza</li>
+                <li>Colocar el agua caliente en la taza</li>
+                <li>Esperar 3m que se propague el té</li>
+                <li>Endulzar a gusto</li>
+                <li>Disfrutar!</li>
+            </ol>
+
+            <h2>Periféricos de PC</h2>
+            <ul>
+                <li>Teclado</li>
+                <li>Mouse</li>
+                <li>Parlantes</li>
+                <li>Monitor</li>
+                <li>Micrófono</li>
+                <li>Impresora</li>
+            </ul>
+
+            <h2>Periféricos de PC</h2>
+            <ul>
+                <li>Teclado</li>
+                <li>Mouse</li>
+                <li>Parlantes</li>
+                <li>Monitor</li>
+                <li>Micrófono</li>
+                <li>Impresora</li>
+            </ul>
+        </section>
+
+        <section id="seccion3" style="margin-top: 500px;">
+            <h2>Sección 3</h2>
+
+            <!--Enlace de externo (google)-->
+            <a href= "https://www.google.com"  target= "_blank" >  Google </a>
+            <!-- href me dice que link
+                target me dice si se abre en una nueva pág o no
+                Luego va el nombre que aparece en la página
+            -->
+            <br><br>
+
+            <!--Enlace interno-->
+            <a href="./Pages/tablas.html"> Tabla de wikipedia</a>
+        </section>
+
+        <section id="seccion4" style="margin-top: 500px;">
+            <h2>Sección 4</h2>
+            
+            <h3>Tablas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tenetur deserunt dolores recusandae distinctio rem nostrum incidunt ullam, sunt quia reiciendis provident amet doloribus possimus quos! Tenetur reiciendis natus beatae?</p>
+            
+            <table border="1px solid #2b2b2b" cellpadding="5px" cellspacing="0">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                <tr>
+                    <td>Cosme</td>
+                    <td>Fulanito</td>
+                </tr>
+                <tr>
+                    <td>Tony</td>
+                    <td>Stark</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <span> Pie de página </span>
+    </footer>
+
+</body>
+</html>
